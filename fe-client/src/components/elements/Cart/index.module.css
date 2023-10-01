@@ -1,0 +1,122 @@
+.cart {
+  background-color: var(--color-white);
+  width: 35%;
+  height: 90vh;
+  padding: 24px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column
+}
+
+.cart__cart-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 70%;
+  overflow: auto;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  gap: 8px;
+}
+
+.cart-item__image {
+  width: 50px;
+  position: relative;
+  margin-right: 6px;
+}
+
+.cart-item__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 60%;
+}
+
+.cart-item__desc > p {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cart-item__action {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.cart-item__action > button {
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: 300ms all;
+}
+
+.cart-item__action > button:hover {
+  filter: brightness(130%);
+}
+
+.cart__checkout {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cart__total-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart__pay {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between
+}
+
+.cart__pay > input {
+  border: 2px solid var(--color-gray);
+  border-radius: 24px;
+  font-size: 14px;
+  padding: 6px 6px 6px 14px;
+  width: 75%;
+  outline: none;
+}
+
+.cart__checkout > button {
+  background-color: var(--color-blue);
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-radius: 24px;
+  outline: none;
+  cursor: pointer;
+  color: var(--color-white);
+  transition: 300ms all;
+}
+
+.cart__checkout > button:hover {
+  filter: brightness(130%);
+}
+
+.cart__checkout > button:disabled {
+  filter: contrast(50%);
+  cursor: default;
+}
